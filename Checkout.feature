@@ -1,4 +1,4 @@
-#language: pt
+            #language: pt
 
             Funcionalidade: Tela de Cadastro-Checkout 
             Como Cliente da EBAC-SHOP
@@ -8,18 +8,18 @@
             Contexto: que eu selecione a EBAC-SHOP
 
             Cenario: Inserir dados obrigatorios 
-            Quando  eu realizar cadastro
-            E todos os campos obrigatorios
-            Entao marcado com asteriscos
+            Quando  eu realizar cadastro na pagina checkout
+            E inserir todos os campos obrigatorios 
+            Entao deve estar marcado com asteriscos
             
             Cenario: Cadastro com campos incompletos 
-            Quando eu realizar cadastro
+            Quando eu realizar cadastro na tela checkout
             E manter campos vazios
             Entao deve exibir mensagem de erro
 
             Esquema do Cenário: Não autenticar usuarios invalidos
-            Quando eu digitar o <usuario> invalido
-            E a <senha>
+            Quando eu digitar o <usuario> incorreto no login
+            E o sistema ao validar 
             Então deve exibir a <mensagem> de insucesso
 
             Exemplos:
